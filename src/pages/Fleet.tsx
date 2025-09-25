@@ -1,0 +1,257 @@
+import React from 'react';
+import { Truck, Car, Shield, Award } from 'lucide-react';
+
+const Fleet = () => {
+  const fleetData = [
+    {
+      name: 'Flatbed Towing Truck',
+      type: 'Heavy Duty',
+      capacity: '5 Ton',
+      image: 'https://images.pexels.com/photos/13065690/pexels-photo-13065690.jpeg?auto=compress&cs=tinysrgb&w=800',
+      features: ['Mobil Sedan', 'SUV/MPV', 'Luxury Car', 'Sports Car'],
+      description: 'Truk towing flatbed untuk kendaraan dengan ground clearance rendah atau kendaraan mewah yang membutuhkan penanganan extra hati-hati.'
+    },
+    {
+      name: 'Wheel Lift Towing',
+      type: 'Medium Duty',
+      capacity: '3 Ton',
+      image: 'https://images.pexels.com/photos/162805/tow-truck-car-wreck-wreck-truck-162805.jpeg?auto=compress&cs=tinysrgb&w=800',
+      features: ['Mobil Sedan', 'Hatchback', 'Small SUV', 'Van'],
+      description: 'Towing truck dengan sistem wheel lift yang cocok untuk kendaraan penumpang standar dan van kecil.'
+    },
+    {
+      name: 'Motorcycle Carrier',
+      type: 'Specialized',
+      capacity: '10 Motor',
+      image: 'https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=800',
+      features: ['Sport Bike', 'Matic', 'Bebek', 'Motor Listrik'],
+      description: 'Kendaraan khusus untuk towing sepeda motor dengan sistem pengikat yang aman dan platform khusus.'
+    },
+    {
+      name: 'Heavy Duty Truck',
+      type: 'Heavy Duty',
+      capacity: '10 Ton',
+      image: 'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+      features: ['Truck', 'Bus', 'Heavy Vehicle', 'Commercial'],
+      description: 'Truk derek heavy duty untuk kendaraan komersial, bus, dan truck yang membutuhkan kapasitas angkat tinggi.'
+    },
+  ];
+
+  const specifications = [
+    { icon: Shield, title: 'Asuransi Penuh', desc: 'Semua armada dilindungi asuransi comprehensive' },
+    { icon: Award, title: 'Certified Drivers', desc: 'Driver berpengalaman dengan sertifikasi internasional' },
+    { icon: Truck, title: 'Regular Maintenance', desc: 'Perawatan rutin untuk performa optimal' },
+    { icon: Car, title: 'GPS Tracking', desc: 'Semua unit dilengkapi GPS untuk monitoring real-time' },
+  ];
+
+  return (
+    <div className="pt-20">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+              Armada Towing Profesional
+            </h1>
+            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+              Armada lengkap dengan berbagai jenis kendaraan towing untuk melayani semua kebutuhan derek 
+              kendaraan Anda dengan aman dan profesional.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+              <div className="bg-blue-800 rounded-lg p-4">
+                <div className="text-2xl font-bold text-orange-400">15+</div>
+                <div className="text-blue-200 text-sm">Unit Towing</div>
+              </div>
+              <div className="bg-blue-800 rounded-lg p-4">
+                <div className="text-2xl font-bold text-orange-400">24/7</div>
+                <div className="text-blue-200 text-sm">Siap Operasi</div>
+              </div>
+              <div className="bg-blue-800 rounded-lg p-4">
+                <div className="text-2xl font-bold text-orange-400">10</div>
+                <div className="text-blue-200 text-sm">Ton Kapasitas</div>
+              </div>
+              <div className="bg-blue-800 rounded-lg p-4">
+                <div className="text-2xl font-bold text-orange-400">100%</div>
+                <div className="text-blue-200 text-sm">Terasuransi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fleet Grid */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {fleetData.map((vehicle, index) => (
+              <div
+                key={index}
+                className="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img
+                    src={vehicle.image}
+                    alt={vehicle.name}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 right-4 bg-blue-900 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    {vehicle.type}
+                  </div>
+                  <div className="absolute bottom-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    {vehicle.capacity}
+                  </div>
+                </div>
+                
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    {vehicle.name}
+                  </h3>
+                  <p className="text-gray-600 mb-6">
+                    {vehicle.description}
+                  </p>
+                  
+                  <div className="mb-6">
+                    <h4 className="text-lg font-semibold text-gray-900 mb-3">Cocok Untuk:</h4>
+                    <div className="grid grid-cols-2 gap-2">
+                      {vehicle.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-blue-900 rounded-full"></div>
+                          <span className="text-gray-700">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <button
+                    onClick={() => window.open(`https://wa.me/6287890152199?text=Halo, saya ingin menggunakan ${vehicle.name} untuk towing`, '_blank')}
+                    className="w-full bg-blue-900 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
+                  >
+                    Request {vehicle.name}
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Specifications */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Standar Armada Kami
+            </h2>
+            <p className="text-xl text-gray-600">
+              Semua kendaraan memenuhi standar internasional untuk keamanan dan kualitas
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {specifications.map((spec, index) => {
+              const Icon = spec.icon;
+              return (
+                <div key={index} className="bg-white rounded-xl p-6 text-center hover:shadow-lg transition-all">
+                  <div className="bg-blue-100 text-blue-900 p-4 rounded-full inline-flex mb-4">
+                    <Icon className="h-8 w-8" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    {spec.title}
+                  </h3>
+                  <p className="text-gray-600">
+                    {spec.desc}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Safety Features */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                Fitur Keamanan & Teknologi
+              </h2>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-green-100 text-green-600 p-2 rounded-lg">
+                    <Shield className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900">Sistem Pengaman Berlapis</h3>
+                    <p className="text-gray-600">Winch berkualitas tinggi, tali sling certified, dan sistem pengunci otomatis</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-blue-100 text-blue-600 p-2 rounded-lg">
+                    <Car className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900">GPS Real-time Tracking</h3>
+                    <p className="text-gray-600">Monitoring posisi kendaraan secara real-time untuk keamanan maksimal</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="bg-orange-100 text-orange-600 p-2 rounded-lg">
+                    <Award className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900">Operator Bersertifikat</h3>
+                    <p className="text-gray-600">Semua operator telah menjalani training khusus dan memiliki sertifikat resmi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <img
+                src="https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Fleet Safety"
+                className="w-full h-96 object-cover rounded-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
+              <div className="absolute bottom-6 left-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Keamanan Terjamin</h3>
+                <p className="text-white/90">Armada modern dengan standar keamanan internasional</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-blue-900 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            Butuh Bantuan Towing dengan Armada Profesional?
+          </h2>
+          <p className="text-xl text-blue-100 mb-8">
+            Hubungi kami sekarang untuk mendapatkan bantuan dengan armada terlengkap dan terpercaya
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <button
+              onClick={() => window.open('https://wa.me/6287890152199?text=Halo, saya ingin bertanya tentang armada towing', '_blank')}
+              className="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+            >
+              Konsultasi WhatsApp
+            </button>
+            <a
+              href="tel:+6287890152199"
+              className="bg-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
+            >
+              Call: 0878-9015-2199
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Fleet;
