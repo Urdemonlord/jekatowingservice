@@ -41,8 +41,8 @@ const Contact = () => {
   ];
 
   const serviceAreas = [
-    'Jakarta Pusat', 'Jakarta Selatan', 'Jakarta Barat', 
-    'Jakarta Timur', 'Jakarta Utara', 'Depok', 'Bekasi', 'Tangerang'
+    'Jepara Kota', 'Pecangaan', 'Tahunan', 'Welahan', 
+    'Mayong', 'Kalinyamatan', 'Donorojo', 'Karimunjawa'
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -92,17 +92,26 @@ Mohon segera direspon. Terima kasih!`;
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image with Dark Overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://images.pexels.com/photos/13065690/pexels-photo-13065690.jpeg?auto=compress&cs=tinysrgb&w=1920')"
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Hubungi Kami
+            <h1 className="text-5xl lg:text-7xl font-bold mb-6 text-white">
+              Hubungi <span className="text-[#FF5A00]">Kami</span>
             </h1>
-            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
               Tim customer service kami siap membantu Anda 24 jam setiap hari. 
               Hubungi kami melalui berbagai channel yang tersedia untuk mendapatkan bantuan cepat.
             </p>
-            <div className="bg-orange-500 text-white px-6 py-3 rounded-lg inline-block font-semibold">
+            <div className="bg-[#FF5A00] text-white px-8 py-4 rounded-lg inline-block font-bold text-lg shadow-lg">
               Respon dalam 2 menit • Layanan 24/7
             </div>
           </div>
@@ -110,13 +119,13 @@ Mohon segera direspon. Terima kasih!`;
       </section>
 
       {/* Contact Methods */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Cara Menghubungi Kami
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Cara Menghubungi <span className="text-[#FF5A00]">Kami</span>
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Pilih metode komunikasi yang paling nyaman untuk Anda
             </p>
           </div>
@@ -125,16 +134,16 @@ Mohon segera direspon. Terima kasih!`;
             {contactMethods.map((method, index) => {
               const Icon = method.icon;
               return (
-                <div key={index} className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-all">
-                  <div className={`${method.color} text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6`}>
+                <div key={index} className="bg-white rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-[#FF5A00]">
+                  <div className="bg-[#FF5A00] text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                     <Icon className="h-8 w-8" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{method.title}</h3>
-                  <p className="text-lg font-semibold text-blue-900 mb-3">{method.info}</p>
+                  <p className="text-lg font-semibold text-[#FF5A00] mb-3">{method.info}</p>
                   <p className="text-gray-600 mb-6">{method.description}</p>
                   <button
                     onClick={method.action}
-                    className={`${method.color} text-white px-6 py-3 rounded-lg font-semibold transition-colors`}
+                    className="bg-[#FF5A00] hover:bg-[#E54A00] text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg"
                   >
                     Hubungi Sekarang
                   </button>
@@ -144,23 +153,23 @@ Mohon segera direspon. Terima kasih!`;
           </div>
 
           {/* Emergency Contact */}
-          <div className="bg-red-50 border border-red-200 rounded-2xl p-8 text-center">
-            <h3 className="text-2xl font-bold text-red-800 mb-4">
+          <div className="bg-gradient-to-r from-red-500 to-red-600 rounded-2xl p-8 text-white text-center">
+            <h3 className="text-3xl font-bold mb-4">
               🚨 Panggilan Darurat
             </h3>
-            <p className="text-red-700 mb-6">
+            <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
               Untuk situasi darurat yang membutuhkan bantuan segera, langsung hubungi:
             </p>
-            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
               <a
                 href="tel:+6287890152199"
-                className="bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                className="bg-white text-red-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 📞 Call: 0878-9015-2199
               </a>
               <button
                 onClick={() => window.open('https://wa.me/6287890152199?text=🚨 DARURAT! Saya butuh bantuan towing segera', '_blank')}
-                className="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+                className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/30 transition-all duration-300 transform hover:scale-105 border border-white/30"
               >
                 💬 WhatsApp Darurat
               </button>
@@ -169,19 +178,110 @@ Mohon segera direspon. Terima kasih!`;
         </div>
       </section>
 
-      {/* Contact Form & Info */}
-      <section className="py-16 bg-gray-50">
+      {/* Google Maps & Address */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Lokasi <span className="text-[#FF5A00]">Kantor Kami</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Alamat lengkap dan peta lokasi Jeka Towing Service di Jepara
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Google Maps */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-xl">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1234567890123!2d110.67412345678901!3d-6.589123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzUnMjAuOCJTIDExMMKwNDAnMjYuOCJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Jeka Towing Service Location"
+              ></iframe>
+            </div>
+
+            {/* Address Info */}
+            <div className="space-y-8">
+              <div className="bg-white rounded-2xl p-8 shadow-xl">
+                <div className="flex items-start space-x-4 mb-6">
+                  <div className="bg-[#FF5A00] text-white p-3 rounded-lg">
+                    <MapPin className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Alamat Lengkap</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Depan Jembatan Timbang, RT.08/RW.02, Rw. 1, Lebuawu, 
+                      Kec. Pecangaan, Jepara, Jawa Tengah 59462
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-[#FF5A00]" />
+                    <span className="text-gray-700 font-semibold">0878-9015-2199</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Mail className="h-5 w-5 text-[#FF5A00]" />
+                    <span className="text-gray-700 font-semibold">divandaal@gmail.com</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Clock className="h-5 w-5 text-[#FF5A00]" />
+                    <span className="text-gray-700 font-semibold">24 Jam Setiap Hari</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-[#FF5A00] to-[#E54A00] rounded-2xl p-8 text-white">
+                <h3 className="text-2xl font-bold mb-4">Akses Mudah</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                    <span>Dekat dengan Jembatan Timbang Jepara</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                    <span>Akses dari jalan raya utama</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                    <span>Parkir luas untuk kendaraan</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                    <span>Koordinasi GPS tersedia</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form & Info */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Kirim <span className="text-[#FF5A00]">Pesan</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Isi form di bawah ini untuk mengirim pertanyaan atau feedback. 
+              Kami akan merespon dalam waktu 24 jam.
+            </p>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Kirim Pesan
-              </h2>
-              <p className="text-gray-600 mb-8">
-                Isi form di bawah ini untuk mengirim pertanyaan atau feedback. 
-                Kami akan merespon dalam waktu 24 jam.
-              </p>
+            <div className="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-[#FF5A00]">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                Form Kontak
+              </h3>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -196,7 +296,7 @@ Mohon segera direspon. Terima kasih!`;
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF5A00] focus:border-transparent"
                       placeholder="Masukkan nama lengkap"
                     />
                   </div>
@@ -212,7 +312,7 @@ Mohon segera direspon. Terima kasih!`;
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF5A00] focus:border-transparent"
                       placeholder="0812-3456-7890"
                     />
                   </div>
@@ -286,7 +386,7 @@ Mohon segera direspon. Terima kasih!`;
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-blue-900 text-white py-4 px-8 rounded-lg font-semibold hover:bg-blue-800 transition-colors flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-[#FF5A00] text-white py-4 px-8 rounded-lg font-bold hover:bg-[#E54A00] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
                 >
                   {isSubmitting ? (
                     <span>Mengirim...</span>
@@ -303,9 +403,11 @@ Mohon segera direspon. Terima kasih!`;
             {/* Contact Info */}
             <div className="space-y-8">
               {/* Business Hours */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-[#FF5A00]">
                 <div className="flex items-center mb-6">
-                  <Clock className="h-8 w-8 text-blue-900 mr-3" />
+                  <div className="bg-[#FF5A00] text-white p-3 rounded-lg mr-4">
+                    <Clock className="h-6 w-6" />
+                  </div>
                   <h3 className="text-2xl font-bold text-gray-900">Jam Operasional</h3>
                 </div>
                 <div className="space-y-3">
@@ -325,21 +427,23 @@ Mohon segera direspon. Terima kasih!`;
               </div>
 
               {/* Service Areas */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-[#FF5A00]">
                 <div className="flex items-center mb-6">
-                  <MapPin className="h-8 w-8 text-blue-900 mr-3" />
+                  <div className="bg-[#FF5A00] text-white p-3 rounded-lg mr-4">
+                    <MapPin className="h-6 w-6" />
+                  </div>
                   <h3 className="text-2xl font-bold text-gray-900">Area Layanan</h3>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
                   {serviceAreas.map((area, index) => (
                     <div key={index} className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#FF5A00] rounded-full"></div>
                       <span className="text-gray-700">{area}</span>
                     </div>
                   ))}
                 </div>
-                <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-                  <p className="text-sm text-blue-700">
+                <div className="mt-6 p-4 bg-orange-50 rounded-lg">
+                  <p className="text-sm text-orange-700">
                     <strong>Catatan:</strong> Untuk area di luar coverage, silakan hubungi kami 
                     untuk konfirmasi ketersediaan layanan.
                   </p>
@@ -347,9 +451,9 @@ Mohon segera direspon. Terima kasih!`;
               </div>
 
               {/* Quick Contact */}
-              <div className="bg-gradient-to-r from-blue-900 to-blue-800 rounded-2xl p-8 text-white">
+              <div className="bg-gradient-to-r from-[#FF5A00] to-[#E54A00] rounded-2xl p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">Butuh Bantuan Cepat?</h3>
-                <p className="text-blue-100 mb-6">
+                <p className="text-white/90 mb-6">
                   Untuk bantuan darurat atau pertanyaan mendesak, hubungi langsung:
                 </p>
                 <div className="space-y-3">

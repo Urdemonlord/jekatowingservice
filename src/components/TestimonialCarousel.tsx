@@ -59,11 +59,11 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <section className="py-16 bg-blue-50">
+    <section className="py-16 bg-orange-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Testimoni Customer
+            Testimoni <span className="text-[#FF5A00]">Customer</span>
           </h2>
           <p className="text-xl text-gray-600">
             Kepuasan customer adalah prioritas utama kami
@@ -71,11 +71,11 @@ const TestimonialCarousel = () => {
         </div>
 
         <div className="relative">
-          <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
+          <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12 border-l-4 border-[#FF5A00]">
             <div className="grid lg:grid-cols-3 gap-8 items-center">
               <div className="lg:col-span-2">
                 <div className="flex items-center mb-4">
-                  <Quote className="h-8 w-8 text-blue-900 mr-3" />
+                  <Quote className="h-8 w-8 text-[#FF5A00] mr-3" />
                   <div className="flex space-x-1">
                     {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
                       <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
@@ -92,16 +92,16 @@ const TestimonialCarousel = () => {
                     {testimonials[currentIndex].name}
                   </h4>
                   <p className="text-gray-600">{testimonials[currentIndex].location}</p>
-                  <span className="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mt-2">
+                  <span className="inline-block bg-orange-100 text-[#FF5A00] text-sm px-3 py-1 rounded-full mt-2">
                     {testimonials[currentIndex].service}
                   </span>
                 </div>
               </div>
 
               <div className="text-center lg:text-right">
-                <div className="bg-blue-900 text-white p-6 rounded-xl inline-block">
+                <div className="bg-[#FF5A00] text-white p-6 rounded-xl inline-block shadow-lg">
                   <div className="text-3xl font-bold mb-2">{testimonials[currentIndex].rating}.0</div>
-                  <div className="text-blue-200">Rating</div>
+                  <div className="text-white/80">Rating</div>
                 </div>
               </div>
             </div>
@@ -122,7 +122,7 @@ const TestimonialCarousel = () => {
                   key={index}
                   onClick={() => setCurrentIndex(index)}
                   className={`w-3 h-3 rounded-full transition-all ${
-                    index === currentIndex ? 'bg-blue-900' : 'bg-gray-300'
+                    index === currentIndex ? 'bg-[#FF5A00]' : 'bg-gray-300'
                   }`}
                 />
               ))}
@@ -138,16 +138,16 @@ const TestimonialCarousel = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-xl p-6">
+          <div className="bg-gradient-to-r from-[#FF5A00] to-[#E54A00] rounded-xl p-6 shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-2">
               Bergabunglah dengan ribuan customer yang puas!
             </h3>
-            <p className="text-green-100 mb-4">
+            <p className="text-white/90 mb-4">
               Dapatkan layanan towing terbaik dengan harga terjangkau
             </p>
             <button
               onClick={() => window.open('https://wa.me/6287890152199?text=Halo, saya ingin menggunakan jasa towing', '_blank')}
-              className="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-[#FF5A00] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-md"
             >
               Hubungi Kami Sekarang
             </button>

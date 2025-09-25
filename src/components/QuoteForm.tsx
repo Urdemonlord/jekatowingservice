@@ -72,14 +72,14 @@ Mohon segera diproses. Terima kasih!`;
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Minta Penawaran Towing
+            Minta Penawaran <span className="text-[#FF5A00]">Towing</span>
           </h2>
           <p className="text-xl text-gray-600">
             Isi form di bawah ini untuk mendapatkan penawaran terbaik sesuai kebutuhan Anda
           </p>
         </div>
 
-        <div className="bg-gray-50 rounded-2xl p-8 lg:p-12">
+        <div className="bg-gray-50 rounded-2xl p-8 lg:p-12 border border-[#FF5A00]/20">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -205,7 +205,7 @@ Mohon segera diproses. Terima kasih!`;
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-blue-900 text-white py-4 px-8 rounded-lg font-semibold hover:bg-blue-800 transition-colors flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-[#FF5A00] text-white py-4 px-8 rounded-lg font-semibold hover:bg-[#E54A00] transition-colors flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
             >
               {isSubmitting ? (
                 <span>Mengirim...</span>

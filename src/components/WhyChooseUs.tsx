@@ -1,4 +1,3 @@
-import React from 'react';
 import { Clock, Shield, Users, Truck, Award, MapPin } from 'lucide-react';
 
 const WhyChooseUs = () => {
@@ -30,8 +29,8 @@ const WhyChooseUs = () => {
     },
     {
       icon: MapPin,
-      title: 'Coverage Luas',
-      description: 'Melayani Jakarta dan sekitarnya dengan respon cepat',
+       title: 'Coverage Luas',
+       description: 'Melayani Jepara dan sekitarnya dengan respon cepat',
     },
   ];
 
@@ -54,9 +53,9 @@ const WhyChooseUs = () => {
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300"
+                className="bg-white rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 border-b-4 border-[#FF5A00]"
               >
-                <div className="bg-blue-100 text-blue-900 p-4 rounded-full inline-flex mb-4">
+                <div className="bg-orange-100 text-[#FF5A00] p-4 rounded-full inline-flex mb-4">
                   <Icon className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -70,32 +69,32 @@ const WhyChooseUs = () => {
           })}
         </div>
 
-        <div className="bg-gradient-to-r from-blue-900 to-blue-800 rounded-2xl p-8 lg:p-12 text-white">
+        <div className="bg-gradient-to-r from-[#FF5A00] to-[#E54A00] rounded-2xl p-8 lg:p-12 text-white">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-3xl font-bold mb-4">
                 Respon Cepat, Layanan Terpercaya
               </h3>
-              <p className="text-blue-100 mb-6 text-lg">
+              <p className="text-white/90 mb-6 text-lg">
                 Dengan waktu respon rata-rata 15-30 menit, kami hadir ketika Anda membutuhkan. 
                 Pengalaman puluhan ribu customer membuktikan kualitas layanan kami.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div>
-                  <div className="text-3xl font-bold text-orange-400 mb-2">15-30</div>
-                  <div className="text-blue-200">Menit Respon</div>
+                  <div className="text-3xl font-bold text-white mb-2">15-30</div>
+                  <div className="text-white/80">Menit Respon</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-orange-400 mb-2">99%</div>
-                  <div className="text-blue-200">Customer Puas</div>
+                  <div className="text-3xl font-bold text-white mb-2">99%</div>
+                  <div className="text-white/80">Customer Puas</div>
                 </div>
               </div>
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/162805/tow-truck-car-wreck-wreck-truck-162805.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/img/jeka towing.webp"
                 alt="Professional Towing"
-                className="w-full h-64 object-cover rounded-lg"
+                className="w-full h-64 object-contain bg-white/10 p-4 rounded-lg"
               />
             </div>
           </div>
