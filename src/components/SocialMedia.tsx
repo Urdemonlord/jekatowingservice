@@ -36,7 +36,7 @@ const SocialMedia = () => {
             className="bg-black text-white rounded-xl p-6 text-center hover:shadow-xl transition-all transform hover:-translate-y-1"
           >
             <div className="bg-white rounded-full p-4 mx-auto mb-4 w-20 h-20 flex items-center justify-center shadow-md">
-              <img src="/public/tiktok.svg" alt="TikTok" className="h-8 w-8" />
+              <img src="/tiktok.svg" alt="TikTok" className="h-8 w-8" />
             </div>
             <h3 className="text-xl font-bold mb-2">TikTok</h3>
             <p className="text-white/90">@jekatowingservice</p>
