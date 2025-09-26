@@ -1,0 +1,40 @@
+# robots.txt for https://jekatowingservice.com/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://jekatowingservice.com/sitemap.xml
+
+# Rate limiting to prevent overloading the server
+Crawl-delay: 10
+
+# Disallow access to specific files and directories
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*?*
+
+# Allow Google Image bot to access all images
+User-agent: Googlebot-Image
+Allow: /img/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.webp$
+
+# Allow Google Mobile bot
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Prevent other search engines from wasting resources
+User-agent: Baiduspider
+Crawl-delay: 50
+
+User-agent: Yandex
+Crawl-delay: 50
