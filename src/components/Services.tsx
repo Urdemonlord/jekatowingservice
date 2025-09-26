@@ -47,7 +47,14 @@ const Services = () => {
       description:
         'Layanan pengambilan mobil baru dari dealer dengan dokumentasi lengkap dan keamanan terjamin',
       image:
-        'https://imgur.com/IWz4UY9.jpg',
+        'https://imgur.com/3xFoxZU.jpg',
+    },
+    {
+      title: 'Pengiriman Alat Industri Pertanian',
+      description:
+        'Layanan pengiriman alat berat dan mesin pertanian dengan keamanan dan ketepatan waktu',
+      image:
+        'https://imgur.com/B7w4QCL.jpg',
     },
   ];
 
