@@ -53,7 +53,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-6 w-6 text-[#FF5A00]" />
-                <span className="text-gray-200 text-lg font-medium">Seluruh Indonesia</span>
+                <span className="text-gray-200 text-lg font-medium">Seluruh Pulau Jawa</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Truck className="h-6 w-6 text-[#FF5A00]" />

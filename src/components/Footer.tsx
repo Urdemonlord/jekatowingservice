@@ -63,11 +63,10 @@ const Footer = () => {
                <li>• Kantor Jepara</li>
                <li>• Jabodetabek</li>
                <li>• Bali</li>
+               <li>• Yogyakarta</li>
                <li>• Seluruh Jawa Tengah</li>
                <li>• Seluruh Jawa Timur</li>
                <li>• Seluruh Jawa Barat</li>
-               <li>• Seluruh Indonesia</li>
-
             </ul>
           </div>
 
