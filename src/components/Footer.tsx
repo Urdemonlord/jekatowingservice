@@ -2,7 +2,10 @@ import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/6287890152199?text=Halo, saya butuh bantuan towing service', '_blank');
+    window.open(
+      'https://wa.me/6287890152199?text=Halo, saya butuh bantuan towing service',
+      '_blank'
+    );
   };
 
   return (
@@ -13,10 +16,10 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="p-2">
-                <img 
-                  src="/img/jeka towing.webp" 
-                  alt="Jeka Towing Logo" 
-                  className="h-10 w-auto" 
+                <img
+                  src="/public/jekatowing.webp"
+                  alt="Jeka Towing Logo"
+                  className="h-10 w-auto"
                 />
               </div>
               <div>
@@ -25,7 +28,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-4">
-              Layanan towing terpercaya dengan armada lengkap dan teknisi berpengalaman. Siap melayani 24 jam setiap hari.
+              Layanan towing terpercaya dengan armada lengkap dan teknisi
+              berpengalaman. Siap melayani 24 jam setiap hari.
             </p>
             <div className="flex space-x-4">
               <button
@@ -60,13 +64,13 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Area Layanan</h3>
             <ul className="space-y-2 text-gray-300">
-               <li>• Kantor Jepara</li>
-               <li>• Jabodetabek</li>
-               <li>• Bali</li>
-               <li>• Yogyakarta</li>
-               <li>• Seluruh Jawa Tengah</li>
-               <li>• Seluruh Jawa Timur</li>
-               <li>• Seluruh Jawa Barat</li>
+              <li>• Kantor Jepara</li>
+              <li>• Jabodetabek</li>
+              <li>• Bali</li>
+              <li>• Yogyakarta</li>
+              <li>• Seluruh Jawa Tengah</li>
+              <li>• Seluruh Jawa Timur</li>
+              <li>• Seluruh Jawa Barat</li>
             </ul>
           </div>
 
@@ -84,7 +88,10 @@ const Footer = () => {
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 text-[#FF5A00] mt-1" />
-                <span className="text-gray-300">Depan Jembatan Timbang, RT.08/RW.02, Lebuawu, Kec. Pecangaan, Kabupaten Jepara, Jawa Tengah 59462</span>
+                <span className="text-gray-300">
+                  Depan Jembatan Timbang, RT.08/RW.02, Lebuawu, Kec. Pecangaan,
+                  Kabupaten Jepara, Jawa Tengah 59462
+                </span>
               </div>
               <div className="flex items-center space-x-2">
                 <Clock className="h-4 w-4 text-[#FF5A00]" />
@@ -94,28 +101,43 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Bottom bar */}
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-300 mb-4 md:mb-0">
-              © {new Date().getFullYear()} Jeka Towing Service. All rights reserved.
+              © {new Date().getFullYear()} Jeka Towing Service. All rights
+              reserved.
             </p>
-            <div className="flex space-x-4">
-              <a 
-                href="https://instagram.com/jeka_towingservice" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-[#FF5A00] transition-colors"
-              >
-                Instagram: @jeka_towingservice
-              </a>
-              <a 
-                href="https://tiktok.com/@jekatowingservice" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-[#FF5A00] transition-colors"
-              >
-                TikTok: @jekatowingservice
-              </a>
+            <div className="flex flex-col md:flex-row md:space-x-6 items-center">
+              <p className="text-gray-400 text-sm mb-2 md:mb-0">
+                Made with by{" "}
+                <a
+                  href="https://meowlabs.store"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#FF5A00] hover:underline"
+                >
+                  MeowLabs
+                </a>
+              </p>
+              <div className="flex space-x-4">
+                <a
+                  href="https://instagram.com/jeka_towingservice"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-[#FF5A00] transition-colors"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://tiktok.com/@jekatowingservice"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-[#FF5A00] transition-colors"
+                >
+                  TikTok
+                </a>
+              </div>
             </div>
           </div>
         </div>
