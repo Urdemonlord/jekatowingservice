@@ -34,7 +34,7 @@ const About = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-12 sm:pt-32">
         {/* Background Image with Dark Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -44,19 +44,19 @@ const About = () => {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-white">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-white">
                 Tentang <span className="text-[#FF5A00]">Jeka Towing</span>
               </h1>
-              <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-                Berdiri sejak 2018, kami telah menjadi partner terpercaya untuk layanan towing 
-                di Jepara dan sekitarnya. Dengan komitmen memberikan pelayanan terbaik, kami 
-                terus berinovasi untuk memenuhi kebutuhan customer dengan jangkauan layanan 
+              <p className="text-lg sm:text-xl text-gray-200 mb-8 leading-relaxed">
+                Berdiri sejak 2018, kami telah menjadi partner terpercaya untuk layanan towing
+                di Jepara dan sekitarnya. Dengan komitmen memberikan pelayanan terbaik, kami
+                terus berinovasi untuk memenuhi kebutuhan customer dengan jangkauan layanan
                 ke hampir seluruh kota besar di Indonesia.
               </p>
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <div className="text-4xl font-bold text-[#FF5A00] mb-2">1000+</div>
                   <div className="text-gray-300">Kendaraan Tertolong</div>
@@ -71,7 +71,7 @@ const About = () => {
               <img
                 src="https://imgur.com/QCOFb0X.jpg"
                 alt="Jeka Towing Armada"
-                className="w-full h-96 object-cover rounded-2xl shadow-2xl"
+                className="w-full h-72 sm:h-96 object-cover rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-[#FF5A00] text-white p-6 rounded-xl shadow-lg">
                 <div className="text-center">
@@ -88,10 +88,10 @@ const About = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Our <span className="text-[#FF5A00]">Vision & Mission</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
               Prinsip dan komitmen yang menjadi fondasi dalam setiap layanan yang kami berikan
             </p>
           </div>
@@ -195,22 +195,22 @@ const About = () => {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Perjalanan <span className="text-[#FF5A00]">Kami</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
               Milestone penting dalam pengembangan Jeka Towing Service sejak 2018
             </p>
           </div>
 
-          <div className="relative">
+          <div className="relative hidden md:block">
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-[#FF5A00]/20"></div>
-            
+
             <div className="space-y-12">
               {milestones.map((milestone, index) => (
                 <div key={index} className="relative flex items-center">
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#FF5A00] rounded-full shadow-lg"></div>
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 ml-auto'}`}>
+                  <div className={`md:w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 ml-auto'}`}>
                     <div className="bg-gray-50 rounded-xl p-6 border-l-4 border-[#FF5A00] hover:shadow-lg transition-all">
                       <div className="text-2xl font-bold text-[#FF5A00] mb-2">{milestone.year}</div>
                       <p className="text-gray-700 leading-relaxed">{milestone.event}</p>
@@ -219,6 +219,18 @@ const About = () => {
                 </div>
               ))}
             </div>
+          </div>
+
+          <div className="space-y-6 md:hidden">
+            {milestones.map((milestone, index) => (
+              <div
+                key={index}
+                className="bg-gray-50 rounded-xl p-5 border-l-4 border-[#FF5A00] shadow-sm"
+              >
+                <div className="text-xl font-bold text-[#FF5A00] mb-1">{milestone.year}</div>
+                <p className="text-gray-700 leading-relaxed">{milestone.event}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
