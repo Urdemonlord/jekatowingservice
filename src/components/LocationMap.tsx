@@ -23,9 +23,11 @@ const LocationMap = () => {
             Temukan kami di lokasi strategis untuk memudahkan jangkauan layanan
           </p>
 
-          <div className="flex items-center justify-center space-x-2 mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left mb-8">
             <MapPin className="h-5 w-5 text-[#FF5A00]" />
-            <span className="text-gray-700">{address}</span>
+            <span className="text-gray-700 text-sm sm:text-base max-w-2xl">
+              {address}
+            </span>
           </div>
         </div>
 

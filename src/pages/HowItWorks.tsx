@@ -38,11 +38,11 @@ const HowItWorks = () => {
       <section className="bg-gradient-to-r from-[#FF5A00] to-[#E54A00] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
               Cara Kerja Jeka Towing
             </h1>
-            <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-              Proses sederhana dan cepat untuk mendapatkan bantuan towing profesional. 
+            <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+              Proses sederhana dan cepat untuk mendapatkan bantuan towing profesional.
               Hanya 4 langkah mudah untuk menyelesaikan masalah kendaraan Anda.
             </p>
             <div className="inline-block bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full text-white font-semibold border border-white/30">
@@ -55,30 +55,30 @@ const HowItWorks = () => {
       {/* Steps Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-24">
+          <div className="space-y-16 lg:space-y-24">
             {steps.map((step, index) => {
               const Icon = step.icon;
               const isEven = index % 2 === 1;
-              
+
               return (
                 <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${isEven ? 'lg:grid-flow-col-dense' : ''}`}>
                   <div className={isEven ? 'lg:col-start-2' : ''}>
                     <div className="flex items-center space-x-4 mb-6">
-                      <div className="bg-[#FF5A00] text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center shadow-lg">
+                      <div className="bg-[#FF5A00] text-white text-2xl sm:text-3xl font-bold w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center shadow-lg">
                         {step.step}
                       </div>
-                      <div className="bg-orange-100 p-4 rounded-full">
-                        <Icon className="h-8 w-8 text-[#FF5A00]" />
+                      <div className="bg-orange-100 p-3 sm:p-4 rounded-full">
+                        <Icon className="h-6 w-6 sm:h-8 sm:w-8 text-[#FF5A00]" />
                       </div>
                     </div>
-                    
-                    <h3 className="text-3xl font-bold text-gray-900 mb-4">
+
+                    <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
                       {step.title}
                     </h3>
-                    <p className="text-xl text-gray-600 mb-6">
+                    <p className="text-lg text-gray-600 mb-6">
                       {step.description}
                     </p>
-                    
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {step.details.map((detail, idx) => (
                         <div key={idx} className="flex items-center space-x-3">
@@ -89,12 +89,12 @@ const HowItWorks = () => {
                     </div>
                   </div>
                   
-                  <div className={`bg-gray-100 rounded-2xl p-8 shadow-lg border-l-4 border-[#FF5A00] ${isEven ? 'lg:col-start-1' : ''}`}>
+                  <div className={`bg-gray-100 rounded-2xl p-6 sm:p-8 shadow-lg border-l-4 border-[#FF5A00] ${isEven ? 'lg:col-start-1' : ''}`}>
                     <div className="text-center">
-                      <div className="bg-white rounded-full p-6 inline-block mb-6 shadow-md">
-                        <Icon className="h-16 w-16 text-[#FF5A00]" />
+                      <div className="bg-white rounded-full p-5 sm:p-6 inline-block mb-6 shadow-md">
+                        <Icon className="h-12 w-12 sm:h-16 sm:w-16 text-[#FF5A00]" />
                       </div>
-                      <h4 className="text-2xl font-bold text-gray-900 mb-2">
+                      <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
                         Langkah {step.step}
                       </h4>
                       <p className="text-gray-600 mb-6">
@@ -116,14 +116,14 @@ const HowItWorks = () => {
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Timeline <span className="text-[#FF5A00]">Layanan</span>
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-lg sm:text-xl text-gray-600">
               Dari panggilan pertama hingga kendaraan sampai tujuan
             </p>
           </div>
 
-          <div className="relative">
+          <div className="relative hidden md:block">
             <div className="absolute left-1/2 -ml-0.5 w-1 h-full bg-[#FF5A00] rounded-full"></div>
-            
+
             <div className="space-y-8">
               {[
                 { time: '0 menit', event: 'Panggilan masuk', desc: 'Customer menghubungi via call/WA' },
@@ -163,6 +163,26 @@ const HowItWorks = () => {
                 </div>
               ))}
             </div>
+          </div>
+
+          <div className="md:hidden space-y-6">
+            {[
+              { time: '0 menit', event: 'Panggilan masuk', desc: 'Customer menghubungi via call/WA' },
+              { time: '2 menit', event: 'Konfirmasi detail', desc: 'Verifikasi lokasi dan kebutuhan' },
+              { time: '5 menit', event: 'Dispatch unit', desc: 'Tim terdekat diberangkatkan' },
+              { time: '15-30 menit', event: 'Tiba di lokasi', desc: 'Teknisi sampai dan evaluasi' },
+              { time: '45-60 menit', event: 'Proses towing', desc: 'Kendaraan di-towing ke tujuan' },
+              { time: '90 menit', event: 'Selesai', desc: 'Kendaraan sampai tujuan dengan aman' }
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#FF5A00]"
+              >
+                <div className="font-bold text-[#FF5A00]">{item.time}</div>
+                <div className="text-lg font-bold text-gray-900">{item.event}</div>
+                <div className="text-gray-600">{item.desc}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

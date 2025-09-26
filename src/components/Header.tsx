@@ -55,13 +55,13 @@ const Header = () => {
       isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center gap-3 py-3 sm:py-4">
           <div className="flex items-center">
             <a href="#home" className="flex items-center space-x-2">
-              <img 
-                src="/jekatowing.webp" 
-                alt="Jeka Towing Service Logo" 
-                className="h-32 sm:h-12 lg:h-20 w-20" 
+              <img
+                src="/jekatowing.webp"
+                alt="Jeka Towing Service Logo"
+                className="h-12 w-12 sm:h-12 sm:w-auto lg:h-20"
               />
               <div>
                 <h1 className="text-xl font-bold text-[#FF5A00]">Jeka Towing</h1>

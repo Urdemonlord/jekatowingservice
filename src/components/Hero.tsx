@@ -6,7 +6,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-12 sm:pt-32">
       {/* Background Image with Dark Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -16,8 +16,8 @@ const Hero = () => {
       ></div>
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
       
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-32">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6">
@@ -28,25 +28,25 @@ const Hero = () => {
                   className="h-20 w-auto mr-4" 
                 />
                 <div>
-                  <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-white">
+                  <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight text-white">
                     Jeka Towing
                     <span className="block text-[#FF5A00]">Service</span>
                   </h1>
                 </div>
               </div>
-              <p className="text-2xl text-gray-200 leading-relaxed font-medium">
-                Solusi Jasa Pengiriman Kendaraan 24 Jam – 
+              <p className="text-xl sm:text-2xl text-gray-200 leading-relaxed font-medium">
+                Solusi Jasa Pengiriman Kendaraan 24 Jam –
                 <span className="text-[#FF5A00]"> Aman, Cepat, Profesional</span>
               </p>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Berdiri sejak 2018, berpengalaman di bidang towing dengan jangkauan 
-                layanan ke hampir seluruh kota besar di Indonesia. 
+              <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
+                Berdiri sejak 2018, berpengalaman di bidang towing dengan jangkauan
+                layanan ke hampir seluruh kota besar di Indonesia.
                 Berbasis di Jepara dengan layanan 24 jam.
               </p>
             </div>
 
             {/* Features */}
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
               <div className="flex items-center space-x-3">
                 <Clock className="h-6 w-6 text-[#FF5A00]" />
                 <span className="text-gray-200 text-lg font-medium">24/7 Available</span>
@@ -85,7 +85,7 @@ const Hero = () => {
 
             {/* Trust Indicators */}
             <div className="pt-8 border-t border-white/20">
-              <div className="grid grid-cols-3 gap-8 text-center">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center">
                 <div>
                   <div className="text-3xl font-bold text-[#FF5A00]">1000+</div>
                   <div className="text-sm text-gray-300">Kendaraan Tertolong</div>
@@ -103,8 +103,8 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Contact Card */}
-          <div className="relative">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl">
+          <div className="relative w-full max-w-xl mx-auto lg:max-w-none">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 shadow-2xl">
               <div className="text-center space-y-6">
                 <div className="w-24 h-24 bg-[#FF5A00] rounded-full flex items-center justify-center mx-auto shadow-lg">
                   <Truck className="h-12 w-12 text-white" />
