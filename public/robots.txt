@@ -1,13 +1,15 @@
 # robots.txt for https://jekatowingservice.com/
+# Jeka Towing Service - Jasa Derek Mobil & Motor 24 Jam Se-Jawa
+# Layanan towing profesional untuk mobil, motor, dan kendaraan berat
 
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Sitemap location - Jeka Towing Service Sitemap
 Sitemap: https://jekatowingservice.com/sitemap.xml
 
 # Rate limiting to prevent overloading the server
-Crawl-delay: 10
+Crawl-delay: 5
 
 # Disallow access to specific files and directories
 Disallow: /cgi-bin/
@@ -19,7 +21,7 @@ Disallow: /*.js$
 Disallow: /*.css$
 Disallow: /*?*
 
-# Allow Google Image bot to access all images
+# Allow Google Image bot to access all images - Jeka Towing Service fleet images and towing service images
 User-agent: Googlebot-Image
 Allow: /img/
 Allow: /*.jpg$
@@ -27,6 +29,9 @@ Allow: /*.jpeg$
 Allow: /*.gif$
 Allow: /*.png$
 Allow: /*.webp$
+Allow: /layanan/*
+Allow: /area/*
+Allow: /services/*
 
 # Allow Google Mobile bot
 User-agent: Googlebot-Mobile
