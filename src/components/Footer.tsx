@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-4">
               <div className="p-2">
                 <img
-                  src="/public/jekatowing.webp"
+                  src="/jekatowing.webp"
                   alt="Jeka Towing Logo"
                   className="h-10 w-auto"
                 />

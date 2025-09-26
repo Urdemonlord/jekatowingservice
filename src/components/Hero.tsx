@@ -23,7 +23,7 @@ const Hero = () => {
             <div className="space-y-6">
               <div className="flex items-center mb-4">
                 <img 
-                  src="/public/jekatowing.webp" 
+                  src="/jekatowing.webp" 
                   alt="Jeka Towing Service Logo" 
                   className="h-20 w-auto mr-4" 
                 />

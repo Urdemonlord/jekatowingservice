@@ -92,7 +92,7 @@ const WhyChooseUs = () => {
             </div>
             <div className="relative">
               <img
-                src="/public/jekatowing.webp"
+                src="/jekatowing.webp"
                 alt="Professional Towing"
                 className="w-full h-64 object-contain bg-white/10 p-4 rounded-lg"
               />
