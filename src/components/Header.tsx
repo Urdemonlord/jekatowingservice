@@ -59,7 +59,7 @@ const Header = () => {
           <div className="flex items-center">
             <a href="#home" className="flex items-center space-x-2">
               <img 
-                src="/img/jeka towing.webp" 
+                src="/img/jeka towing.png" 
                 alt="Jeka Towing Service Logo" 
                 className="h-32 sm:h-12 lg:h-20 w-20" 
               />

@@ -183,7 +183,7 @@ const HowItWorks = () => {
             {[
               {
                 q: 'Berapa lama waktu tunggu untuk towing?',
-                a: 'Rata-rata 15-30 menit untuk area Jepara Pusat, 25-45 menit untuk Kudus, Pati, dan Demak, 40-60 menit untuk area Rembang dan Blora.'
+                a: 'Bila jarak dekat, estimasi kedatangan 15–40 menit. Untuk lokasi yang lebih jauh, sekitar 40 menit hingga 1 jam. Kami selalu berusaha secepat mungkin tiba di lokasi Anda.'
               },
               {
                 q: 'Apakah tersedia layanan 24 jam?',
