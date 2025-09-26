@@ -1,14 +1,10 @@
-import React from 'react';
 import { Users, Award, Shield, Clock, Truck, MapPin } from 'lucide-react';
 
 const About = () => {
   const milestones = [
-    { year: '2018', event: 'Jeka Towing Service didirikan dengan 2 unit towing truck' },
-     { year: '2019', event: 'Ekspansi armada menjadi 5 unit dan melayani seluruh Jepara' },
-    { year: '2020', event: 'Meluncurkan layanan 24 jam dan sistem GPS tracking' },
-    { year: '2021', event: 'Mencapai 10.000+ customer dan rating 4.9/5' },
-     { year: '2022', event: 'Membuka layanan ke Kudus, Pati, dan Demak' },
-    { year: '2023', event: 'Armada bertambah menjadi 15+ unit dengan teknologi terbaru' },
+    { year: '2018', event: 'Jeka Towing Service didirikan dengan 1 unit towing truck' },
+     { year: '2020', event: 'Ekspansi armada menjadi 2 unit dan melayani seluruh Indonesia' },
+    { year: '2021', event: 'Meluncurkan layanan 24 jam dan sistem GPS tracking' },
     { year: '2024', event: 'Melayani 50.000+ panggilan dengan tingkat kepuasan 99%' }
   ];
 

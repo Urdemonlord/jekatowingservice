@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { HashLink } from 'react-router-hash-link';
 import { Menu, X, Phone, MessageCircle } from 'lucide-react';
 
 const Header = () => {
@@ -62,7 +61,7 @@ const Header = () => {
               <img 
                 src="/img/jeka towing.webp" 
                 alt="Jeka Towing Service Logo" 
-                className="h-12 w-auto" 
+                className="h-32 sm:h-12 lg:h-20 w-20" 
               />
               <div>
                 <h1 className="text-xl font-bold text-[#FF5A00]">Jeka Towing</h1>

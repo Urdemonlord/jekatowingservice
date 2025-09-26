@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Services = () => {
   const services = [
     {
@@ -21,7 +19,7 @@ const Services = () => {
       description:
         'Derek bus dengan armada heavy duty untuk kendaraan transportasi umum dan pariwisata',
       image:
-        'https://imgur.com/JroJ3T8.jpg',
+        'https://imgur.com/Z8oJ3Ms.jpg',
     },
     {
       title: 'Pengiriman Alat Berat',
@@ -35,7 +33,7 @@ const Services = () => {
       description:
         'Derek mesin industri dan peralatan pabrik dengan penanganan khusus dan keamanan maksimal',
       image:
-        'https://imgur.com/Go3er0n.jpg',
+        'https://imgur.com/mTOMETW.jpg',
     },
     {
       title: 'Pengiriman Mobil Sport & Moge',

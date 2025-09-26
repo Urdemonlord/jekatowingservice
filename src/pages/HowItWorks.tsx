@@ -1,5 +1,4 @@
-import React from 'react';
-import { ArrowRight, Phone, MapPin, Truck, CheckCircle, MessageCircle } from 'lucide-react';
+import { Phone, MapPin, Truck, CheckCircle, MessageCircle } from 'lucide-react';
 
 const HowItWorks = () => {
   const steps = [

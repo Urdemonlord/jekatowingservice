@@ -60,12 +60,14 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Area Layanan</h3>
             <ul className="space-y-2 text-gray-300">
-               <li>• Jepara</li>
-               <li>• Kudus</li>
-               <li>• Pati</li>
-               <li>• Rembang</li>
-               <li>• Demak</li>
+               <li>• Kantor Jepara</li>
+               <li>• Jabodetabek</li>
+               <li>• Bali</li>
                <li>• Seluruh Jawa Tengah</li>
+               <li>• Seluruh Jawa Timur</li>
+               <li>• Seluruh Jawa Barat</li>
+               <li>• Seluruh Indonesia</li>
+
             </ul>
           </div>
 

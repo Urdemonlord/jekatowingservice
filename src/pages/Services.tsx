@@ -1,4 +1,3 @@
-import React from 'react';
 import { MessageCircle, Phone } from 'lucide-react';
 
 const Services = () => {
