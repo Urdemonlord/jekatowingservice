@@ -3,7 +3,7 @@ const Services = () => {
     {
       title: 'Pengiriman Mobil',
       description:
-        'Derek mobil dengan aman menggunakan truk towing profesional untuk semua jenis mobil sedan, SUV, dan MPV',
+        'Towing mobil dengan aman menggunakan truk towing profesional untuk semua jenis mobil sedan, SUV, dan MPV',
       image:
         'https://imgur.com/5VjxIPH.jpg',
     },
@@ -17,28 +17,28 @@ const Services = () => {
     {
       title: 'Pengiriman Bus',
       description:
-        'Derek bus dengan armada heavy duty untuk kendaraan transportasi umum dan pariwisata',
+        'Towing bus dengan armada heavy duty untuk kendaraan transportasi umum dan pariwisata',
       image:
         'https://imgur.com/Z8oJ3Ms.jpg',
     },
     {
       title: 'Pengiriman Alat Berat',
       description:
-        'Derek alat berat dan kendaraan konstruksi dengan kapasitas angkat tinggi dan peralatan khusus',
+        'Towing alat berat dan kendaraan konstruksi dengan kapasitas angkat tinggi dan peralatan khusus',
       image:
         'https://imgur.com/691C5Cm.jpg',
     },
     {
       title: 'Pengiriman Mesin Industri',
       description:
-        'Derek mesin industri dan peralatan pabrik dengan penanganan khusus dan keamanan maksimal',
+        'Towing mesin industri dan peralatan pabrik dengan penanganan khusus dan keamanan maksimal',
       image:
         'https://imgur.com/mTOMETW.jpg',
     },
     {
       title: 'Pengiriman Mobil Sport & Moge',
       description:
-        'Derek khusus mobil sport dan motor gede dengan peralatan premium dan penanganan extra hati-hati',
+        'Towing khusus mobil sport dan motor gede dengan peralatan premium dan penanganan extra hati-hati',
       image:
         'https://imgur.com/foTNyRr.jpg',
     },
