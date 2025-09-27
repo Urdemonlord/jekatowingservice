@@ -1,5 +1,5 @@
 # robots.txt for https://jekatowingservice.com/
-# Jeka Towing Service - Jasa Derek Mobil & Motor 24 Jam Se-Jawa
+# Jeka Towing Service - Jasa Towing Mobil,Motor & Alat Berat 24 Jam
 # Layanan towing profesional untuk mobil, motor, dan kendaraan berat
 
 User-agent: *
