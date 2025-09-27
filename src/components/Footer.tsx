@@ -57,6 +57,7 @@ const Footer = () => {
               <li>• Pengiriman Alat Berat</li>
               <li>• Pengiriman Mesin Industri</li>
               <li>• Pengambilan dari Dealer</li>
+              <li>• Pengiriman Alat Industri Pertanian</li>
             </ul>
           </div>
 
