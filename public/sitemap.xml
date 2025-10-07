@@ -2,13 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Homepage (highest priority) -->
+  <!-- Homepage -->
   <url>
     <loc>https://jekatowingservice.com/</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
@@ -16,101 +13,72 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://i.imgur.com/9ZK3hQR.webp</image:loc>
-      <image:title>Jeka Towing Service Logo</image:title>
+      <image:title>Jeka Towing Service</image:title>
       <image:caption>Jasa Towing Mobil &amp; Motor 24 Jam Se-Jepara | Jeka Towing Service</image:caption>
     </image:image>
   </url>
 
-  <!-- Service Section -->
+  <!-- About -->
   <url>
-    <loc>https://jekatowingservice.com/#services</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://i.imgur.com/h4Rn5Dw.webp</image:loc>
-      <image:title>Jasa Towing Mobil Terpercaya</image:title>
-      <image:caption>Layanan towing mobil profesional di seluruh Jepara - Jeka Towing Service</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://i.imgur.com/fP8qL3T.webp</image:loc>
-      <image:title>Jasa Towing Motor Terpercaya</image:title>
-      <image:caption>Layanan towing motor aman dan cepat di seluruh Jepara - Jeka Towing Service</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://i.imgur.com/tGv4DcE.webp</image:loc>
-      <image:title>Jasa Towing Kendaraan Berat</image:title>
-      <image:caption>Layanan towing truk dan bus profesional - Jeka Towing Service</image:caption>
-    </image:image>
-  </url>
-
-  <!-- How It Works Section -->
-  <url>
-    <loc>https://jekatowingservice.com/#how-it-works</loc>
+    <loc>https://jekatowingservice.com/about</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Why Choose Us -->
+  <!-- Contact -->
   <url>
-    <loc>https://jekatowingservice.com/#why-choose-us</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Testimonials -->
-  <url>
-    <loc>https://jekatowingservice.com/#testimonials</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- About Page -->
-  <url>
-    <loc>https://jekatowingservice.com/#about</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://i.imgur.com/mDfLs5R.webp</image:loc>
-      <image:title>Sejarah Jeka Towing Service</image:title>
-      <image:caption>Jeka Towing Service - Penyedia jasa Towing profesional sejak 2015</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Contact Page -->
-  <url>
-    <loc>https://jekatowingservice.com/#contact</loc>
+    <loc>https://jekatowingservice.com/contact</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Social Media Section -->
+  <!-- Services Main Page -->
   <url>
-    <loc>https://jekatowingservice.com/#social</loc>
+    <loc>https://jekatowingservice.com/services</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Location Section -->
+  <!-- Service Detail Pages -->
   <url>
-    <loc>https://jekatowingservice.com/#location</loc>
+    <loc>https://jekatowingservice.com/services/towing-mobil</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://i.imgur.com/WqKs7jP.webp</image:loc>
-      <image:title>Lokasi Jeka Towing Service</image:title>
-      <image:caption>Jeka Towing Service - Depan Jembatan Timbang, RT.08/RW.02, Lebuawu, Kec. Pecangaan, Kabupaten Jepara, Jawa Tengah 59462</image:caption>
-    </image:image>
   </url>
 
-  <!-- Jawa Tengah Services Area -->
+  <url>
+    <loc>https://jekatowingservice.com/services/towing-motor</loc>
+    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://jekatowingservice.com/services/towing-kendaraan-berat</loc>
+    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://jekatowingservice.com/services/towing-jarak-jauh</loc>
+    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://jekatowingservice.com/services/towing-darurat</loc>
+    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Location / Area Pages -->
   <url>
     <loc>https://jekatowingservice.com/area/jawa-tengah</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
@@ -118,7 +86,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Jawa Timur Services Area -->
   <url>
     <loc>https://jekatowingservice.com/area/jawa-timur</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
@@ -126,7 +93,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Jawa Barat Services Area -->
   <url>
     <loc>https://jekatowingservice.com/area/jawa-barat</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
@@ -134,7 +100,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Yogyakarta Services Area -->
   <url>
     <loc>https://jekatowingservice.com/area/yogyakarta</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
@@ -142,181 +107,47 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Service Types - Car Towing -->
-  <url>
-    <loc>https://jekatowingservice.com/services/Towing-mobil</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Service Types - Motorcycle Towing -->
-  <url>
-    <loc>https://jekatowingservice.com/services/Towing-motor</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Service Types - Heavy Vehicle Towing -->
-  <url>
-    <loc>https://jekatowingservice.com/services/Towing-kendaraan-berat</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Service Types - Long Distance Towing -->
-  <url>
-    <loc>https://jekatowingservice.com/services/Towing-jarak-jauh</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Service Types - Emergency Towing -->
-  <url>
-    <loc>https://jekatowingservice.com/services/Towing-darurat</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Service Types - Industrial Machinery Moving -->
-  <url>
-    <loc>https://jekatowingservice.com/services/pemindahan-mesin-industri</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Additional Towing Service Keywords Pages -->
-  
-  <!-- Towing Mobil Mogok -->
-  <url>
-    <loc>https://jekatowingservice.com/layanan/Towing-mobil-mogok</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://i.imgur.com/h4Rn5Dw.webp</image:loc>
-      <image:title>Jasa Towing Mobil Mogok</image:title>
-      <image:caption>Jeka Towing Service - Layanan Towing mobil mogok cepat dan profesional</image:caption>
-    </image:image>
-  </url>
-  
-  <!-- Towing Service Kecelakaan -->
-  <url>
-    <loc>https://jekatowingservice.com/layanan/towing-kecelakaan</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Jasa Towing Truk -->
-  <url>
-    <loc>https://jekatowingservice.com/layanan/jasa-Towing-truk</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Layanan Rescue Kendaraan -->
-  <url>
-    <loc>https://jekatowingservice.com/layanan/rescue-kendaraan</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Towing Mobil Antar Pulau -->
-  <url>
-    <loc>https://jekatowingservice.com/layanan/Towing-mobil-antar-pulau</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Jasa Towing 24 Jam -->
-  <url>
-    <loc>https://jekatowingservice.com/layanan/jasa-towing-24-jam</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Towing Mobil Mati Total -->
-  <url>
-    <loc>https://jekatowingservice.com/layanan/Towing-mobil-mati-total</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Jasa Towing Mobil Terjangkau -->
-  <url>
-    <loc>https://jekatowingservice.com/layanan/jasa-Towing-mobil-terjangkau</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Towing Mobil Terdekat -->
-  <url>
-    <loc>https://jekatowingservice.com/layanan/towing-mobil-terdekat</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Towing Gendong Mobil Mewah -->
-  <url>
-    <loc>https://jekatowingservice.com/layanan/Towing-gendong-mobil-mewah</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- City-specific Service Pages for Jawa Tengah -->
+  <!-- City-Specific Pages -->
   <url>
     <loc>https://jekatowingservice.com/area/jawa-tengah/jepara</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
+
   <url>
     <loc>https://jekatowingservice.com/area/jawa-tengah/semarang</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
+
   <url>
     <loc>https://jekatowingservice.com/area/jawa-tengah/solo</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
+
   <url>
     <loc>https://jekatowingservice.com/area/jawa-tengah/kudus</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
+
   <url>
     <loc>https://jekatowingservice.com/area/jawa-tengah/pati</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
+
   <url>
     <loc>https://jekatowingservice.com/area/jawa-tengah/demak</loc>
     <lastmod>2025-09-26T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
 </urlset>
