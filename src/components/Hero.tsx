@@ -8,12 +8,13 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-12 sm:pt-32">
       {/* Background Image with Dark Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://imgur.com/QCOFb0X.jpg')"
+        backgroundImage: "url('/mobil.jpeg')"
         }}
       ></div>
+
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-32">
