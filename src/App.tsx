@@ -10,6 +10,7 @@ import LocationMap from './components/LocationMap';
 import SocialMedia from './components/SocialMedia';
 import HowItWorks from './pages/HowItWorks';
 import About from './pages/About';
+import LocalJepara from './pages/LocalJepara';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </div>
           <div id="services">
             <Services />
+          </div>
+          <div id="jepara-local">
+            <LocalJepara />
           </div>
           <div id="how-it-works">
             <HowItWorks />
