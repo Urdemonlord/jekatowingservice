@@ -4,10 +4,10 @@ const LocationMap = () => {
   const address =
     'Depan jembatan timbang, RT.08/RW.02, Rw. 1, Lebuawu, Kec. Pecangaan, Kabupaten Jepara, Jawa Tengah 59462';
 
-  // Open Google Maps with this location when clicked
+  // Open Google Maps with the exact location provided
   const openGoogleMaps = () => {
     window.open(
-      `https://maps.google.com/maps?q=${encodeURIComponent(address)}`,
+      'https://www.google.com/maps/place/Jasa+jekatowing+Jepara+Kudus+24+Jam/@-6.7065227,110.7106324,15.54z/data=!4m6!3m5!1s0x2e70dfa0ff5f906f:0x8ad33561d7bb5ca4!8m2!3d-6.7052684!4d110.7133426!16s%2Fg%2F11ynqj40b8?hl=id',
       '_blank'
     );
   };
@@ -33,14 +33,14 @@ const LocationMap = () => {
 
         <div className="rounded-xl overflow-hidden shadow-lg border-4 border-white">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.529878627134!2d110.71067392362818!3d-6.704992243290636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70dfb76a82e1eb%3A0x70f793b8420dda3!2sjeka%20jasa%20towing%20jepara%20kudus!5e0!3m2!1sen!2sid!4v1758821250452!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.3840903847064!2d110.70841047609844!3d-6.706522698634563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70dfa0ff5f906f%3A0x8ad33561d7bb5ca4!2sJasa%20jekatowing%20Jepara%20Kudus%2024%20Jam!5e0!3m2!1sid!2sid!4v1731176400000"
             width="100%"
             height="450"
             style={{ border: 0 }}
             allowFullScreen={true}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Jeka Towing Service Location"
+            title="Jeka Towing Service Location - Jepara Kudus"
           />
         </div>
 
