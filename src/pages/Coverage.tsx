@@ -1,6 +1,15 @@
 import { MapPin, Clock, Phone, CheckCircle } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO';
 
 const Coverage = () => {
+  useSEO({
+    title: 'Area Layanan Towing | Coverage Jepara, Kudus, Pati, Demak, Semarang',
+    description: 'Jangkauan layanan towing Jeka Towing Service meliputi Jepara, Kudus, Pati, Demak, Semarang dan sekitarnya. Respon cepat 15-30 menit, tersedia 24 jam setiap hari.',
+    keywords: 'area layanan towing jepara, coverage towing, towing jepara kudus, towing pati demak, towing semarang, jangkauan layanan derek',
+    ogTitle: 'Area Layanan Towing | Jeka Towing Service',
+    ogDescription: 'Melayani area Jepara dan sekitarnya dengan waktu respon cepat. Coverage luas untuk kebutuhan towing 24 jam.',
+    ogImage: 'https://jekatowingservice.com/og-image.webp',
+  });
   const coverageAreas = [
     {
       area: 'Jepara Kota',

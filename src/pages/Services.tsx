@@ -1,6 +1,15 @@
 import { MessageCircle, Phone } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO';
 
 const Services = () => {
+  useSEO({
+    title: 'Layanan Towing Profesional | Derek Mobil, Motor, Bus & Alat Berat',
+    description: 'Jasa towing profesional untuk semua jenis kendaraan: mobil, motor, bus, truk, dan alat berat. Layanan 24 jam dengan teknisi berpengalaman dan armada modern. Hubungi: 0878-9015-2199',
+    keywords: 'layanan towing, derek mobil profesional, derek motor, towing bus, derek alat berat, jasa pengiriman kendaraan, towing service lengkap',
+    ogTitle: 'Layanan Towing Profesional | Jeka Towing Service',
+    ogDescription: 'Berbagai layanan towing profesional untuk semua jenis kendaraan dengan teknisi berpengalaman dan armada lengkap.',
+    ogImage: 'https://jekatowingservice.com/og-image.webp',
+  });
   const services = [
     {
       title: 'Pengiriman Mobil',

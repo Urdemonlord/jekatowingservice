@@ -1,6 +1,15 @@
 import { Truck, Car, Shield, Award, Clock } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO';
 
 const Fleet = () => {
+  useSEO({
+    title: 'Armada Towing Profesional | Fleet Modern & Terawat',
+    description: 'Armada towing lengkap Jeka Towing Service: flatbed, wheel lift, motorcycle carrier, heavy duty truck. Semua unit terawat, tersertifikasi, dan dilengkapi GPS tracking. Tersedia 24/7.',
+    keywords: 'armada towing, fleet towing jepara, truk derek profesional, armada derek lengkap, kendaraan towing modern',
+    ogTitle: 'Armada Towing Profesional | Jeka Towing Service',
+    ogDescription: '15+ unit armada towing profesional siap melayani 24/7. Dari mobil sedan hingga heavy duty truck.',
+    ogImage: 'https://jekatowingservice.com/og-image.webp',
+  });
   const fleetData = [
     {
       name: 'Single Towing Truck',

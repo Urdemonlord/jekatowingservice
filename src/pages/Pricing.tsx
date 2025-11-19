@@ -1,6 +1,15 @@
 import { Check, Star, Phone, MessageCircle } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO';
 
 const Pricing = () => {
+  useSEO({
+    title: 'Tarif Towing Service | Harga Terjangkau & Transparan',
+    description: 'Daftar harga towing service Jeka Towing: Mobil sedan mulai Rp 150.000, SUV/MPV Rp 200.000, Motor Rp 75.000. Tidak ada biaya tersembunyi, estimasi akurat sebelum pelayanan. Hubungi: 0878-9015-2199',
+    keywords: 'tarif towing, harga derek mobil jepara, biaya towing service, harga derek motor, tarif towing transparan',
+    ogTitle: 'Tarif Towing Service | Jeka Towing Service',
+    ogDescription: 'Harga towing transparan dan kompetitif. Tidak ada biaya tersembunyi. Dapatkan estimasi gratis sekarang!',
+    ogImage: 'https://jekatowingservice.com/og-image.webp',
+  });
   const pricingPlans = [
     {
       name: 'Towing Mobil Sedan',

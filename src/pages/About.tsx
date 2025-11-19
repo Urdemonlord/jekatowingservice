@@ -1,6 +1,15 @@
 import { Users, Award, Shield, Clock, Truck, MapPin } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO';
 
 const About = () => {
+  useSEO({
+    title: 'Tentang Jeka Towing Service | Jasa Towing Terpercaya Sejak 2018',
+    description: 'Jeka Towing Service adalah perusahaan jasa towing terpercaya di Jepara sejak 2018. Dengan armada modern, teknisi profesional, dan layanan 24 jam untuk membantu kendaraan mogok Anda.',
+    keywords: 'tentang jeka towing, profil perusahaan towing, sejarah jeka towing, perusahaan derek jepara, towing profesional',
+    ogTitle: 'Tentang Jeka Towing Service | Perusahaan Towing Terpercaya',
+    ogDescription: 'Mengenal lebih dekat Jeka Towing Service, perusahaan jasa towing profesional dengan pengalaman lebih dari 6 tahun melayani Jepara dan sekitarnya.',
+    ogImage: 'https://jekatowingservice.com/og-image.webp',
+  });
   const milestones = [
     { year: '2018', event: 'Jeka Towing Service didirikan dengan 1 unit towing truck' },
      { year: '2020', event: 'Ekspansi armada menjadi 2 unit dan melayani seluruh Indonesia' },

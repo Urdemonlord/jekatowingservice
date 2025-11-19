@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
 import { Phone, MessageCircle, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO';
 
 const Contact = () => {
+  useSEO({
+    title: 'Hubungi Kami | Jeka Towing Service 24 Jam - 0878-9015-2199',
+    description: 'Hubungi Jeka Towing Service untuk layanan towing darurat 24 jam. Call/WhatsApp: 0878-9015-2199. Email: divandaal@gmail.com. Respon cepat dalam 2 menit, layanan 24/7.',
+    keywords: 'kontak jeka towing, nomor telepon towing jepara, whatsapp towing service, email jeka towing, alamat towing jepara, hubungi derek mobil',
+    ogTitle: 'Hubungi Jeka Towing Service | Layanan 24 Jam',
+    ogDescription: 'Hubungi kami untuk bantuan towing darurat 24 jam. Respon cepat, layanan profesional, tersedia via telepon, WhatsApp, dan email.',
+    ogImage: 'https://jekatowingservice.com/og-image.webp',
+  });
   const [formData, setFormData] = useState({
     name: '',
     phone: '',

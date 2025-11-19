@@ -1,6 +1,15 @@
 import { Phone, MapPin, Truck, CheckCircle, MessageCircle } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO';
 
 const HowItWorks = () => {
+  useSEO({
+    title: 'Cara Kerja Towing Service | Proses Mudah 4 Langkah',
+    description: 'Cara kerja Jeka Towing Service sangat mudah: 1) Hubungi kami, 2) Berikan informasi, 3) Tim bergerak, 4) Selesai aman. Respon cepat dalam 15-30 menit. Layanan 24 jam.',
+    keywords: 'cara kerja towing, proses towing service, bagaimana towing bekerja, langkah towing, prosedur derek mobil',
+    ogTitle: 'Cara Kerja Towing Service | Jeka Towing Service',
+    ogDescription: 'Proses mudah dan cepat hanya 4 langkah untuk mendapatkan bantuan towing profesional. Rata-rata respon 15-30 menit.',
+    ogImage: 'https://jekatowingservice.com/og-image.webp',
+  });
   const steps = [
     {
       step: 1,

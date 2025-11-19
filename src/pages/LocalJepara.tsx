@@ -1,6 +1,16 @@
 import { Phone, MessageCircle, MapPin, Clock, Award, Truck, Shield, Zap } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO';
 
 const LocalJepara = () => {
+  useSEO({
+    title: 'Jasa Towing 24 Jam Jepara | Layanan Derek Mobil & Motor Terpercaya',
+    description: 'Jeka Towing Service - Jasa towing 24 jam di Jepara, Kudus, Pati, Demak, Rembang. Layanan derek mobil & motor profesional, respons cepat 15-30 menit, armada modern, harga terjangkau. Hubungi sekarang: 0878-9015-2199',
+    keywords: 'jasa towing 24 jam jepara, derek mobil jepara, derek motor jepara, towing service jepara, jasa derek mobil mogok, derek kendaraan berat, towing terdekat, jasa towing terpercaya, derek 24 jam, rescue kendaraan',
+    ogTitle: 'Jasa Towing 24 Jam Jepara | Jeka Towing Service',
+    ogDescription: 'Layanan towing terpercaya 24 jam di Jepara, Kudus, Pati, Demak. Respons cepat, armada lengkap, harga terjangkau. Hubungi 0878-9015-2199',
+    ogImage: 'https://jekatowingservice.com/og-image.webp',
+  });
+
   const handleWhatsApp = () => {
     window.open('https://wa.me/6287890152199?text=Halo, saya butuh jasa towing 24 jam di Jepara', '_blank');
   };

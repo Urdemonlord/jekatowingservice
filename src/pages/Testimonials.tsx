@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 import { Star, Quote, ChevronLeft, ChevronRight, MessageCircle } from 'lucide-react';
+import { useSEO } from '../hooks/useSEO';
 
 const Testimonials = () => {
+  useSEO({
+    title: 'Testimoni Customer | Review Jasa Towing Service Terpercaya',
+    description: 'Baca testimoni asli dari 2000+ customer yang puas dengan layanan Jeka Towing Service. Rating 4.9/5 bintang. Customer memuji respon cepat, teknisi profesional, dan harga terjangkau. Hubungi: 0878-9015-2199',
+    keywords: 'testimoni towing jepara, review jasa derek, customer towing service, rating towing jepara, kepuasan pelanggan towing',
+    ogTitle: 'Testimoni Customer | Jeka Towing Service',
+    ogDescription: '2000+ customer puas dengan layanan towing kami. Rating 4.9/5 bintang untuk respon cepat dan pelayanan profesional.',
+    ogImage: 'https://jekatowingservice.com/og-image.webp',
+  });
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const testimonials = [

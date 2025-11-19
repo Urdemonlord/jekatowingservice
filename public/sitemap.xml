@@ -7,147 +7,87 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://jekatowingservice.com/</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
+    <loc>https://www.jekatowingservice.com/</loc>
+    <lastmod>2025-01-19T12:00:00+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://i.imgur.com/9ZK3hQR.webp</image:loc>
+      <image:loc>https://www.jekatowingservice.com/og-image.webp</image:loc>
       <image:title>Jeka Towing Service</image:title>
-      <image:caption>Jasa Towing Mobil &amp; Motor 24 Jam Se-Jepara | Jeka Towing Service</image:caption>
+      <image:caption>Jasa Towing Mobil &amp; Motor 24 Jam Jepara | Jeka Towing Service</image:caption>
     </image:image>
   </url>
 
-  <!-- About -->
+  <!-- Local Jepara Page - High Priority SEO Page -->
   <url>
-    <loc>https://jekatowingservice.com/about</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.jekatowingservice.com/local-jepara</loc>
+    <lastmod>2025-01-19T12:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
 
-  <!-- Contact -->
+  <!-- Services -->
   <url>
-    <loc>https://jekatowingservice.com/contact</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Services Main Page -->
-  <url>
-    <loc>https://jekatowingservice.com/services</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
+    <loc>https://www.jekatowingservice.com/services</loc>
+    <lastmod>2025-01-19T12:00:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Service Detail Pages -->
+  <!-- Contact -->
   <url>
-    <loc>https://jekatowingservice.com/services/towing-mobil</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
+    <loc>https://www.jekatowingservice.com/contact</loc>
+    <lastmod>2025-01-19T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- About -->
   <url>
-    <loc>https://jekatowingservice.com/services/towing-motor</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://jekatowingservice.com/services/towing-kendaraan-berat</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
+    <loc>https://www.jekatowingservice.com/about</loc>
+    <lastmod>2025-01-19T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- Coverage -->
   <url>
-    <loc>https://jekatowingservice.com/services/towing-jarak-jauh</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
+    <loc>https://www.jekatowingservice.com/coverage</loc>
+    <lastmod>2025-01-19T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- Fleet -->
   <url>
-    <loc>https://jekatowingservice.com/services/towing-darurat</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
+    <loc>https://www.jekatowingservice.com/fleet</loc>
+    <lastmod>2025-01-19T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
 
-  <!-- Location / Area Pages -->
+  <!-- Pricing -->
   <url>
-    <loc>https://jekatowingservice.com/area/jawa-tengah</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
+    <loc>https://www.jekatowingservice.com/pricing</loc>
+    <lastmod>2025-01-19T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- How It Works -->
   <url>
-    <loc>https://jekatowingservice.com/area/jawa-timur</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
+    <loc>https://www.jekatowingservice.com/how-it-works</loc>
+    <lastmod>2025-01-19T12:00:00+07:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
+  <!-- Testimonials -->
   <url>
-    <loc>https://jekatowingservice.com/area/jawa-barat</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://jekatowingservice.com/area/yogyakarta</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- City-Specific Pages -->
-  <url>
-    <loc>https://jekatowingservice.com/area/jawa-tengah/jepara</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://jekatowingservice.com/area/jawa-tengah/semarang</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://jekatowingservice.com/area/jawa-tengah/solo</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://jekatowingservice.com/area/jawa-tengah/kudus</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://jekatowingservice.com/area/jawa-tengah/pati</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://jekatowingservice.com/area/jawa-tengah/demak</loc>
-    <lastmod>2025-09-26T12:00:00+07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.jekatowingservice.com/testimonials</loc>
+    <lastmod>2025-01-19T12:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
