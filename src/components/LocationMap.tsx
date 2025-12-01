@@ -7,7 +7,7 @@ const LocationMap = () => {
   // Open Google Maps with the exact location provided
   const openGoogleMaps = () => {
     window.open(
-      'https://www.google.com/maps/place/Jasa+Towing+Jepara+Kudus+24+Jam+%7C+Jeka+Towing/@-6.7051812,110.7133005,17z/data=!3m1!4b1!4m6!3m5!1s0x2e70df056c2e91db:0x1d34a473624fe9d9!8m2!3d-6.7051812!4d110.7133005!16s%2Fg%2F11mm839sx7?hl=id',
+      'https://www.google.com/maps/place/Jasa+Towing+Mobil+Motor+24+Jam+Jepara+Kudus+%7C+Jeka+Towing/@-6.7051598,110.7132963,17z/data=!3m1!4b1!4m6!3m5!1s0x2e70dfcbf517706b:0xbc6431fddc996dd2!8m2!3d-6.7051598!4d110.7132963!16s%2Fg%2F11mrqgbfz_!17m2!4m1!1e3!18m1!1e1?hl=id',
       '_blank'
     );
   };
@@ -33,7 +33,7 @@ const LocationMap = () => {
 
         <div className="rounded-xl overflow-hidden shadow-lg border-4 border-white">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.382744568626!2d110.7108504!3d-6.7051812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70df056c2e91db%3A0x1d34a473624fe9d9!2sJasa%20Towing%20Jepara%20Kudus%2024%20Jam%20%7C%20Jeka%20Towing!5e0!3m2!1sid!2sid!4v1732194000000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.3809574832503!2d110.7108504!3d-6.7051598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70dfcbf517706b%3A0xbc6431fddc996dd2!2sJasa%20Towing%20Mobil%20Motor%2024%20Jam%20Jepara%20Kudus%20%7C%20Jeka%20Towing!5e0!3m2!1sid!2sid!4v1732194000000"
             width="100%"
             height="450"
             style={{ border: 0 }}
