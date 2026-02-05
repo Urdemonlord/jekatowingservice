@@ -113,7 +113,7 @@ const Footer = () => {
               <p className="text-gray-400 text-sm mb-2 md:mb-0">
                 Made with by{" "}
                 <a
-                  href="https://meowlabs.store"
+                  href="https://meowlabs.id"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#FF5A00] hover:underline"
