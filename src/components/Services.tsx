@@ -12,7 +12,7 @@ const Services = () => {
       description:
         'Layanan derek khusus sepeda motor dan motor gede dengan penanganan hati-hati dan aman',
       image:
-        'https://imgur.com/LnMGhbM.jpg',
+        'https://imgur.com/4XWqK5e.jpg',
     },
     {
       title: 'Pengiriman Bus',
@@ -29,18 +29,18 @@ const Services = () => {
         'https://imgur.com/691C5Cm.jpg',
     },
     {
-      title: 'Pengiriman Mesin Industri',
+       title: 'Pengiriman Mobil Sport dan Supercar',
       description:
-        'Towing mesin industri dan peralatan pabrik dengan penanganan khusus dan keamanan maksimal',
+    'Towing mobil sport dan supercar dengan armada premium class carrier, menjaga kondisi kendaraan tetap aman, bersih, dan bebas risiko',
       image:
-        'https://imgur.com/mTOMETW.jpg',
+        'https://imgur.com/rTUPrJz.jpg',
     },
     {
-      title: 'Pengiriman Mobil Sport & Moge',
-      description:
-        'Towing khusus mobil sport dan motor gede dengan peralatan premium dan penanganan extra hati-hati',
+      title: 'Pengiriman Motor Moge dan Custom',
+  description:
+    'Layanan towing motor besar dan motor custom dengan pengikatan khusus, armada premium, dan standar keamanan tinggi selama perjalanan',
       image:
-        'https://imgur.com/foTNyRr.jpg',
+        'https://imgur.com/TkyWQgo.jpg',
     },
     {
       title: 'Pengambilan Mobil dari Dealer',
